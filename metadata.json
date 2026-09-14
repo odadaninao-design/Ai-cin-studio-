@@ -1,0 +1,6 @@
+{
+  "name": "CineAI Studio - Montage & Génération Vidéo IA",
+  "description": "Générateur vidéo IA cinématographique et suite de montage automatisée complète avec bande-son adaptative, filtres artistiques et timeline multipiste.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

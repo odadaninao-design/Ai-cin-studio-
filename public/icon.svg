@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c13"/>
+      <stop offset="50%" stop-color="#131724"/>
+      <stop offset="100%" stop-color="#08090d"/>
+    </linearGradient>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="clapperGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Rounded Container -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" stroke="#272d42" stroke-width="8"/>
+
+  <!-- Glowing Aura -->
+  <circle cx="256" cy="256" r="160" fill="#8b5cf6" opacity="0.15" filter="blur(40px)"/>
+
+  <!-- Clapperboard Body -->
+  <g transform="translate(106, 120)">
+    <!-- Lower Board -->
+    <rect x="0" y="80" width="300" height="200" rx="20" fill="#141824" stroke="#333b54" stroke-width="6"/>
+
+    <!-- Film Reel Rings Inside Board -->
+    <circle cx="150" cy="180" r="45" fill="none" stroke="url(#neonGrad)" stroke-width="8" opacity="0.9"/>
+    <circle cx="150" cy="180" r="18" fill="url(#neonGrad)"/>
+    <!-- Play Triangle -->
+    <polygon points="144,168 162,180 144,192" fill="#ffffff"/>
+
+    <!-- Soundwave lines -->
+    <line x1="60" y1="180" x2="60" y2="180" stroke="#06b6d4" stroke-width="8" stroke-linecap="round"/>
+    <line x1="75" y1="165" x2="75" y2="195" stroke="#06b6d4" stroke-width="8" stroke-linecap="round"/>
+    <line x1="90" y1="150" x2="90" y2="210" stroke="#8b5cf6" stroke-width="8" stroke-linecap="round"/>
+    <line x1="210" y1="150" x2="210" y2="210" stroke="#8b5cf6" stroke-width="8" stroke-linecap="round"/>
+    <line x1="225" y1="165" x2="225" y2="195" stroke="#ec4899" stroke-width="8" stroke-linecap="round"/>
+    <line x1="240" y1="180" x2="240" y2="180" stroke="#ec4899" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Top Clapper Bar (Tilted) -->
+    <g transform="rotate(-12 0 80)">
+      <rect x="0" y="24" width="300" height="52" rx="10" fill="url(#clapperGrad)"/>
+      <!-- Slanted Stripes -->
+      <polygon points="40,24 65,24 45,76 20,76" fill="#ffffff" opacity="0.9"/>
+      <polygon points="95,24 120,24 100,76 75,76" fill="#ffffff" opacity="0.9"/>
+      <polygon points="150,24 175,24 155,76 130,76" fill="#ffffff" opacity="0.9"/>
+      <polygon points="205,24 230,24 210,76 185,76" fill="#ffffff" opacity="0.9"/>
+      <polygon points="260,24 285,24 265,76 240,76" fill="#ffffff" opacity="0.9"/>
+    </g>
+
+    <!-- App Title below -->
+    <text x="150" y="252" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="20" letter-spacing="4" text-anchor="middle">
+      CINE<tspan fill="#8b5cf6">AI</tspan>
+    </text>
+  </g>
+</svg>
